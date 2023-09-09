@@ -70,17 +70,29 @@
 				<td width=250><center><font size="3"><b>Alive List</b></font></center></td>
 				<td width=250><center><font size="3"><b>Bracket Results</b></font></center></td>
 			</tr> 	
-			<tr id="sun9women" style="display:none">
-				<td ><center><a href="./sun9_womenaliveS.pdf">Women's Singles</a> <a href="./sun9_womenaliveD.pdf">Women's Doubles</a></center></td>
-				<td ><center><a href="./sun9_womenbracketsS.pdf">Women's Singles</a> <a href="./sun9_womenbracketsD.pdf">Women's Doubles</a></center></td>
+			<tr id="sun9womenS" style="display:none">
+				<td ><center><a href="./sun9_womenaliveS.pdf">Women's Singles</a></center></td>
+				<td ><center><a href="./sun9_womenbracketsS.pdf">Women's Singles</a></center></td>
 			</tr>
-			<tr id="sun9open" style="display:none">
-				<td ><center><a href="./sat9_openalive.pdf">Open</a></center></td>
-				<td ><center><a href="./sat9_openbrackets.pdf">Open</a></center></td>
+			<tr id="sun9womenD" style="display:none">
+				<td ><center><a href="./sun9_womenaliveD.pdf">Women's Doubles</a></center></td>
+				<td ><center><a href="./sun9_womenbracketsD.pdf">Women's Doubles</a></center></td>
 			</tr>
-			<tr id="sun9scratch" style="display:none">
-				<td ><center><a href="./sat9_scratchalive.pdf">Scratch</a></center></td>
-				<td ><center><a href="./sat9_scratchbrackets.pdf">Scratch</a></center></td>
+			<tr id="sun9openS" style="display:none">
+				<td ><center><a href="./sat9_openaliveS.pdf">Open</a></center></td>
+				<td ><center><a href="./sat9_openbracketsS.pdf">Open</a></center></td>
+			</tr>
+			<tr id="sun9openD" style="display:none">
+				<td ><center><a href="./sat9_openaliveD.pdf">Open</a></center></td>
+				<td ><center><a href="./sat9_openbracketsD.pdf">Open</a></center></td>
+			</tr>
+			<tr id="sun9scratchS" style="display:none">
+				<td ><center><a href="./sat9_scratchaliveS.pdf">Scratch</a></center></td>
+				<td ><center><a href="./sat9_scratchbracketsS.pdf">Scratch</a></center></td>
+			</tr>	
+			<tr id="sun9scratchD" style="display:none">
+				<td ><center><a href="./sat9_scratchaliveD.pdf">Scratch</a></center></td>
+				<td ><center><a href="./sat9_scratchbracketsD.pdf">Scratch</a></center></td>
 			</tr>	
 		</Table>
 		<table id="SUN1PM" style="display:none">
@@ -91,17 +103,29 @@
 				<td width=200><center><font size="3"><b>Alive List</b></font></center></td>
 				<td width=200><center><font size="3"><b>Bracket Results</b></font></center></td>
 			</tr>
-			<tr id="sun1women" style="display:none">
-				<td><center><a href="./sat1_womenalive.pdf">Women's</a></center></td>
-				<td><center><a href="./sat1_womenbrackets.pdf">Women's</a></center></td>
+			<tr id="sun1womenS" style="display:none">
+				<td><center><a href="./sat1_womenaliveS.pdf">Women's</a></center></td>
+				<td><center><a href="./sat1_womenbracketsS.pdf">Women's</a></center></td>
 			</tr>
-			<tr id="sun1open" style="display:none">
-				<td><center><a href="./sat1_openalive.pdf">Open</a></center></td>
-				<td><center><a href="./sat1_openbrackets.pdf">Open</a></center></td>
+			<tr id="sun1womenD" style="display:none">
+				<td><center><a href="./sat1_womenaliveD.pdf">Women's</a></center></td>
+				<td><center><a href="./sat1_womenbracketsD.pdf">Women's</a></center></td>
 			</tr>
-			<tr id="sun1scratch" style="display:none">
-				<td><center><a href="./sat1_scratchalive.pdf">Scratch</a></center></td>
-				<td><center><a href="./sat1_scratchbrackets.pdf">Scratch</a></center></td>
+			<tr id="sun1openS" style="display:none">
+				<td><center><a href="./sat1_openaliveS.pdf">Open</a></center></td>
+				<td><center><a href="./sat1_openbracketsS.pdf">Open</a></center></td>
+			</tr>
+			<tr id="sun1openD" style="display:none">
+				<td><center><a href="./sat1_openaliveD.pdf">Open</a></center></td>
+				<td><center><a href="./sat1_openbracketsD.pdf">Open</a></center></td>
+			</tr>
+			<tr id="sun1scratchS" style="display:none">
+				<td><center><a href="./sat1_scratchaliveS.pdf">Scratch</a></center></td>
+				<td><center><a href="./sat1_scratchbracketsS.pdf">Scratch</a></center></td>
+			</tr>
+			<tr id="sun1scratchD" style="display:none">
+				<td><center><a href="./sat1_scratchaliveD.pdf">Scratch</a></center></td>
+				<td><center><a href="./sat1_scratchbracketsD.pdf">Scratch</a></center></td>
 			</tr>
 		</table>
 		<script>
@@ -115,13 +139,19 @@
 			var satOneScratch = 0;
 
 			var sunNine = 0;
-			var sunNineWomen = 0;
-			var sunNineOpen = 0;
-			var sunNineScratch = 0;
+			var sunNineWomenS = 0;
+			var sunNineWomenD = 0;
+			var sunNineOpenS = 0;
+			var sunNineOpenD = 0;
+			var sunNineScratchS = 0;
+			var sunNineScratchD = 0;
 			var sunOne = 0;
-			var sunOneWomen = 0;
-			var sunOneOpen = 0;
-			var sunOneScratch = 0;
+			var sunOneWomenS = 0;
+			var sunOneWomenD = 0;
+			var sunOneOpenS = 0;
+			var sunOneOpenD = 0;
+			var sunOneScratchS = 0;
+			var sunOneScratchD = 0;
 
 			if(doesFileExist("./sat9_womenalive.pdf") || doesFileExist("./sat9_womenbrackets.pdf")){ satNine = 1; satNineWomen = 1; } 		
 			if(doesFileExist("./sat9_openalive.pdf") || doesFileExist("./sat9_openbrackets.pdf")){ satNine = 1; satNineOpen = 1;} 			
@@ -130,12 +160,19 @@
 			if(doesFileExist("./sat1_openalive.pdf") || doesFileExist("./sat1_openbrackets.pdf")){ satOne = 1; satOneOpen = 1; } 
 			if(doesFileExist("./sat1_scratchalive.pdf") || doesFileExist("./sat1_scratchbrackets.pdf")){ satOne = 1; satOneScratch = 1; } 
 			
-			if(doesFileExist("./sun9_womenaliveS.pdf") || doesFileExist("./sun9_womenbracketsS.pdf")){ sunNine = 1; sunNineWomen = 1; } 
-			if(doesFileExist("./sun9_openalive.pdf") || doesFileExist("./sun9_openbrackets.pdf")){ sunNine = 1; sunNineOpen = 1; } 
-			if(doesFileExist("./sun9_scratchalive.pdf") || doesFileExist("./sun9_scratchbrackets.pdf")){ sunNine = 1; sunNineScratch = 1; } 
-			if(doesFileExist("./sun1_womenalive.pdf") || doesFileExist("./sun1_womenbrackets.pdf")){ sunOne = 1; sunOneWomen = 1; } 
-			if(doesFileExist("./sun1_openalive.pdf") || doesFileExist("./sun1_openbrackets.pdf")){ sunOne = 1; sunOneOpen = 1; } 
-			if(doesFileExist("./sun1_scratchalive.pdf") || doesFileExist("./sun1_scratchbrackets.pdf")){ sunOne = 1; sunOneScratch = 1; } 
+			if(doesFileExist("./sun9_womenaliveS.pdf") || doesFileExist("./sun9_womenbracketsS.pdf")){ sunNine = 1; sunNineWomenS = 1; } 
+			if(doesFileExist("./sun9_womenaliveD.pdf") || doesFileExist("./sun9_womenbracketsD.pdf")){ sunNine = 1; sunNineWomenD = 1; }
+			if(doesFileExist("./sun9_openaliveS.pdf") || doesFileExist("./sun9_openbracketsS.pdf")){ sunNine = 1; sunNineOpenS = 1; } 
+			if(doesFileExist("./sun9_openaliveD.pdf") || doesFileExist("./sun9_openbracketsD.pdf")){ sunNine = 1; sunNineOpenD = 1; } 
+			if(doesFileExist("./sun9_scratchaliveS.pdf") || doesFileExist("./sun9_scratchbracketsS.pdf")){ sunNine = 1; sunNineScratchS = 1; } 
+			if(doesFileExist("./sun9_scratchaliveD.pdf") || doesFileExist("./sun9_scratchbracketsD.pdf")){ sunNine = 1; sunNineScratchD = 1; } 
+			
+			if(doesFileExist("./sun1_womenaliveS.pdf") || doesFileExist("./sun1_womenbracketsS.pdf")){ sunOne = 1; sunOneWomenS = 1; }
+			if(doesFileExist("./sun1_womenaliveD.pdf") || doesFileExist("./sun1_womenbracketsD.pdf")){ sunOne = 1; sunOneWomenD = 1; } 
+			if(doesFileExist("./sun1_openaliveS.pdf") || doesFileExist("./sun1_openbracketsS.pdf")){ sunOne = 1; sunOneOpenS = 1; } 
+			if(doesFileExist("./sun1_openaliveD.pdf") || doesFileExist("./sun1_openbracketsD.pdf")){ sunOne = 1; sunOneOpenD = 1; } 
+			if(doesFileExist("./sun1_scratchaliveS.pdf") || doesFileExist("./sun1_scratchbracketsS.pdf")){ sunOne = 1; sunOneScratchS = 1; } 
+			if(doesFileExist("./sun1_scratchaliveD.pdf") || doesFileExist("./sun1_scratchbracketsD.pdf")){ sunOne = 1; sunOneScratchD = 1; } 
 
 			//Saturday 9AM
 			if(satNine == 1){ document.getElementById("SAT9AM").style.display = ''; }
@@ -149,14 +186,20 @@
 			if(satOneScratch == 1){ document.getElementById("sat1scratch").style.display = ''; }
 			//Sunday 9AM
 			if(sunNine == 1){ document.getElementById("SUN9AM").style.display = ''; }
-			if(sunNineWomen == 1){ document.getElementById("sun9women").style.display = ''; }	
-			if(sunNineOpen == 1){ document.getElementById("sun9open").style.display = ''; }	
-			if(sunNineScratch == 1){ document.getElementById("sun9scratch").style.display = ''; }
+			if(sunNineWomenS == 1){ document.getElementById("sun9womenS").style.display = ''; }	
+			if(sunNineWomenD == 1){ document.getElementById("sun9womenD").style.display = ''; }	
+			if(sunNineOpenS == 1){ document.getElementById("sun9openS").style.display = ''; }	
+			if(sunNineOpenD == 1){ document.getElementById("sun9openD").style.display = ''; }	
+			if(sunNineScratchS == 1){ document.getElementById("sun9scratchS").style.display = ''; }
+			if(sunNineScratchD == 1){ document.getElementById("sun9scratchD").style.display = ''; }
 			//Sunday 1PM
 			if(sunOne == 1){ document.getElementById("SUN1PM").style.display = ''; }
-			if(sunOneWomen == 1){ document.getElementById("sun1women").style.display = ''; }	
-			if(sunOneOpen == 1){ document.getElementById("sun1open").style.display = ''; }	
-			if(sunOneScratch == 1){ document.getElementById("sun1scratch").style.display = ''; }	
+			if(sunOneWomenS == 1){ document.getElementById("sun1womenS").style.display = ''; }
+			if(sunOneWomenD == 1){ document.getElementById("sun1womenD").style.display = ''; }
+			if(sunOneOpenS == 1){ document.getElementById("sun1openS").style.display = ''; }	
+			if(sunOneOpenD == 1){ document.getElementById("sun1openD").style.display = ''; }	
+			if(sunOneScratchS == 1){ document.getElementById("sun1scratchS").style.display = ''; }	
+			if(sunOneScratchD == 1){ document.getElementById("sun1scratchD").style.display = ''; }	
 		
 			function doesFileExist(urlToFile) {				
 				var xhr = new XMLHttpRequest();
