@@ -73,14 +73,8 @@
 		function doesFileExist(urlToFile) {				
 			var xhr = new XMLHttpRequest();
 			xhr.open('HEAD', urlToFile, false);
+			xhr.send();			
 			
-			try{
-				xhr.send();
-			}catch(err){
-			alert(err);
-				return false;
-			}
-			 alert(xhr.status);
 			if (xhr.status == "404") {
 				return false;
 			} else {
