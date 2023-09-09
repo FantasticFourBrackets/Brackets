@@ -1,0 +1,19 @@
+SATURDAY VALID FILE NAMES
+
+sat9_womenalive.pdf
+sat9_womenbrackets.pdf
+
+sat9_openalive.pdf
+sat9_openbrackets.pdf
+
+sat9_scratchalive.pdf
+sat9_scratchbrackets.pdf
+
+sat1_womenalive.pdf
+sat1_womenbrackets.pdf
+
+sat1_openalive.pdf
+sat1_openbrackets.pdf
+
+sat1_scratchalive.pdf
+sat1_scratchbrackets.pdf
