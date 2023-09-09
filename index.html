@@ -29,20 +29,18 @@
 				<td width=200><center><font size="3"><b>Bracket Results</b></font></center></td>
 			</tr> 	
 			<tr id="sat9women" style="display:none">
-				<td width=200><center><a href="./sat9_womenalive.pdf">Women's</a></center></td>
-				<td width=200><center><a href="./sat9_womenbrackets.pdf">Women's</a></center></td>
+				<td ><center><a href="./sat9_womenalive.pdf">Women's</a></center></td>
+				<td ><center><a href="./sat9_womenbrackets.pdf">Women's</a></center></td>
 			</tr>
 			<tr id="sat9open" style="display:none">
-				<td width=200><center><a href="./sat9_openalive.pdf">Open</a></center></td>
-				<td width=200><center><a href="./sat9_openbrackets.pdf">Open</a></center></td>
+				<td ><center><a href="./sat9_openalive.pdf">Open</a></center></td>
+				<td ><center><a href="./sat9_openbrackets.pdf">Open</a></center></td>
 			</tr>
 			<tr id="sat9scratch" style="display:none">
-				<td width=200><center><a href="./sat9_scratchalive.pdf">Scratch</a></center></td>
-				<td width=200><center><a href="./sat9_scratchbrackets.pdf">Scratch</a></center></td>
+				<td ><center><a href="./sat9_scratchalive.pdf">Scratch</a></center></td>
+				<td ><center><a href="./sat9_scratchbrackets.pdf">Scratch</a></center></td>
 			</tr>	
-		</Table>	
-			
-		
+		</Table>
 		<table id="SAT1PM" style="display:none">
 			<tr>
 				<td colspan = "2" height=50><center><font size="5"><b>Saturday 1PM Brackets</b></font></center></td>				
@@ -60,6 +58,48 @@
 				<td><center><a href="./sat1_openbrackets.pdf">Open</a></center></td>
 			</tr>
 			<tr id="sat1scratch" style="display:none">
+				<td><center><a href="./sat1_scratchalive.pdf">Scratch</a></center></td>
+				<td><center><a href="./sat1_scratchbrackets.pdf">Scratch</a></center></td>
+			</tr>
+		</table>
+		<table id="SUN9AM" style="display:none;">
+			<tr>
+				<td colspan = "2" height=50><center><font size="5"><b>Sunday 9AM Brackets</b></font></center></td>				
+			</tr>
+			<tr>
+				<td width=200><center><font size="3"><b>Alive List</b></font></center></td>
+				<td width=200><center><font size="3"><b>Bracket Results</b></font></center></td>
+			</tr> 	
+			<tr id="sun9women" style="display:none">
+				<td ><center><a href="./sun9_womenaliveS.pdf">Women's Singles</a> <a href="./sun9_womenaliveD.pdf">Women's Doubles</a></center></td>
+				<td ><center><a href="./sun9_womenbracketsS.pdf">Women's Singles</a> <a href="./sun9_womenbracketsD.pdf">Women's Doubles</a></center></td>
+			</tr>
+			<tr id="sun9open" style="display:none">
+				<td ><center><a href="./sat9_openalive.pdf">Open</a></center></td>
+				<td ><center><a href="./sat9_openbrackets.pdf">Open</a></center></td>
+			</tr>
+			<tr id="sun9scratch" style="display:none">
+				<td ><center><a href="./sat9_scratchalive.pdf">Scratch</a></center></td>
+				<td ><center><a href="./sat9_scratchbrackets.pdf">Scratch</a></center></td>
+			</tr>	
+		</Table>
+		<table id="SUN1PM" style="display:none">
+			<tr>
+				<td colspan = "2" height=50><center><font size="5"><b>Saturday 1PM Brackets</b></font></center></td>				
+			</tr>
+			<tr>
+				<td width=200><center><font size="3"><b>Alive List</b></font></center></td>
+				<td width=200><center><font size="3"><b>Bracket Results</b></font></center></td>
+			</tr>
+			<tr id="sun1women" style="display:none">
+				<td><center><a href="./sat1_womenalive.pdf">Women's</a></center></td>
+				<td><center><a href="./sat1_womenbrackets.pdf">Women's</a></center></td>
+			</tr>
+			<tr id="sun1open" style="display:none">
+				<td><center><a href="./sat1_openalive.pdf">Open</a></center></td>
+				<td><center><a href="./sat1_openbrackets.pdf">Open</a></center></td>
+			</tr>
+			<tr id="sun1scratch" style="display:none">
 				<td><center><a href="./sat1_scratchalive.pdf">Scratch</a></center></td>
 				<td><center><a href="./sat1_scratchbrackets.pdf">Scratch</a></center></td>
 			</tr>
@@ -96,14 +136,27 @@
 			if(doesFileExist("./sun1_womenalive.pdf") || doesFileExist("./sun1_womenbrackets.pdf")){ sunOne = 1; sunOneWomen = 1; } 
 			if(doesFileExist("./sun1_openalive.pdf") || doesFileExist("./sun1_openbrackets.pdf")){ sunOne = 1; sunOneOpen = 1; } 
 			if(doesFileExist("./sun1_scratchalive.pdf") || doesFileExist("./sun1_scratchbrackets.pdf")){ sunOne = 1; sunOneScratch = 1; } 
-			
+
+			//Saturday 9AM
 			if(satNine == 1){ document.getElementById("SAT9AM").style.display = 'inline'; }
 			if(satNineWomen == 1){ document.getElementById("sat9women").style.display = ''; }	
 			if(satNineOpen == 1){ document.getElementById("sat9open").style.display = ''; }	
 			if(satNineScratch == 1){ document.getElementById("sat9scratch").style.display = ''; }
-			
+			//Saturday 1PM
 			if(satOne == 1){ document.getElementById("SAT1PM").style.display = 'inline'; }
-					
+			if(satOneWomen == 1){ document.getElementById("sat1women").style.display = ''; }	
+			if(satOneOpen == 1){ document.getElementById("sat1open").style.display = ''; }	
+			if(satOneScratch == 1){ document.getElementById("sat1scratch").style.display = ''; }
+			//Sunday 9AM
+			if(sunNine == 1){ document.getElementById("SUN9AM").style.display = 'inline'; }
+			if(sunNineWomen == 1){ document.getElementById("sun9women").style.display = ''; }	
+			if(sunNineOpen == 1){ document.getElementById("sun9open").style.display = ''; }	
+			if(sunNineScratch == 1){ document.getElementById("sun9scratch").style.display = ''; }
+			//Sunday 1PM
+			if(sunOne == 1){ document.getElementById("SUN1PM").style.display = 'inline'; }
+			if(sunOneWomen == 1){ document.getElementById("sun1women").style.display = ''; }	
+			if(sunOneOpen == 1){ document.getElementById("sun1open").style.display = ''; }	
+			if(sunOneScratch == 1){ document.getElementById("sun1scratch").style.display = ''; }	
 		
 			function doesFileExist(urlToFile) {				
 				var xhr = new XMLHttpRequest();
