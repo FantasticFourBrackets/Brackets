@@ -82,22 +82,22 @@
 			const sunOneOpen = 0;
 			const sunOneScratch = 0;
 alert("Test2");
-			if(doesFileExist("./sat9_womenalive.pdf") || doesFileExist("./sat9_womenbrackets.pdf")){ satNine = true; satNineWomen = true; } 
-			if(doesFileExist("./sat9_openalive.pdf") || doesFileExist("./sat9_openbrackets.pdf")){ satNine = true; satNineOpen = true;} 
-			if(doesFileExist("./sat9_scratchalive.pdf") || doesFileExist("./sat9_scratchbrackets.pdf")){ satNine = true; satNineScratch = true; } 
-			if(doesFileExist("./sat1_womenalive.pdf") || doesFileExist("./sat1_womenbrackets.pdf")){ satOne = true; satOneWomen = true; } 
-			if(doesFileExist("./sat1_openalive.pdf") || doesFileExist("./sat1_openbrackets.pdf")){ satOne = true; satOneOpen = true; } 
-			if(doesFileExist("./sat1_scratchalive.pdf") || doesFileExist("./sat1_scratchbrackets.pdf")){ satOne = true; satOneScratch = true; } 
+			if(doesFileExist("./sat9_womenalive.pdf") || doesFileExist("./sat9_womenbrackets.pdf")){ satNine = 1; satNineWomen = 1; } 
+			if(doesFileExist("./sat9_openalive.pdf") || doesFileExist("./sat9_openbrackets.pdf")){ satNine = 1; satNineOpen = 1;} 
+			if(doesFileExist("./sat9_scratchalive.pdf") || doesFileExist("./sat9_scratchbrackets.pdf")){ satNine = 1; satNineScratch = 1; } 
+			if(doesFileExist("./sat1_womenalive.pdf") || doesFileExist("./sat1_womenbrackets.pdf")){ satOne = 1; satOneWomen = 1; } 
+			if(doesFileExist("./sat1_openalive.pdf") || doesFileExist("./sat1_openbrackets.pdf")){ satOne = 1; satOneOpen = 1; } 
+			if(doesFileExist("./sat1_scratchalive.pdf") || doesFileExist("./sat1_scratchbrackets.pdf")){ satOne = 1; satOneScratch = 1; } 
 
-			if(doesFileExist("./sun9_womenalive.pdf") || doesFileExist("./sun9_womenbrackets.pdf")){ sunNine = true; sunNineWomen = true; } 
-			if(doesFileExist("./sun9_openalive.pdf") || doesFileExist("./sun9_openbrackets.pdf")){ sunNine = true; sunNineOpen = true; } 
-			if(doesFileExist("./sun9_scratchalive.pdf") || doesFileExist("./sun9_scratchbrackets.pdf")){ sunNine = true; sunNineScratch = true; } 
-			if(doesFileExist("./sun1_womenalive.pdf") || doesFileExist("./sun1_womenbrackets.pdf")){ sunOne = true; sunOneWomen = true; } 
-			if(doesFileExist("./sun1_openalive.pdf") || doesFileExist("./sun1_openbrackets.pdf")){ sunOne = true; sunOneOpen = true; } 
-			if(doesFileExist("./sun1_scratchalive.pdf") || doesFileExist("./sun1_scratchbrackets.pdf")){ sunOne = true; sunOneScratch = true; } 
-
-			if(satNine){ document.getElementById("SAT9AM").style.display = 'inline'; }
-			if(satOne){ document.getElementById("SAT1PM").style.display = 'inline'; }
+			if(doesFileExist("./sun9_womenalive.pdf") || doesFileExist("./sun9_womenbrackets.pdf")){ sunNine = 1; sunNineWomen = 1; } 
+			if(doesFileExist("./sun9_openalive.pdf") || doesFileExist("./sun9_openbrackets.pdf")){ sunNine = 1; sunNineOpen = 1; } 
+			if(doesFileExist("./sun9_scratchalive.pdf") || doesFileExist("./sun9_scratchbrackets.pdf")){ sunNine = 1; sunNineScratch = 1; } 
+			if(doesFileExist("./sun1_womenalive.pdf") || doesFileExist("./sun1_womenbrackets.pdf")){ sunOne = 1; sunOneWomen = 1; } 
+			if(doesFileExist("./sun1_openalive.pdf") || doesFileExist("./sun1_openbrackets.pdf")){ sunOne = 1; sunOneOpen = 1; } 
+			if(doesFileExist("./sun1_scratchalive.pdf") || doesFileExist("./sun1_scratchbrackets.pdf")){ sunOne = 1; sunOneScratch = 1; } 
+alert("Test3");
+			if(boolean(satNine)){ document.getElementById("SAT9AM").style.display = 'inline'; }
+			if(boolean(satOne)){ document.getElementById("SAT1PM").style.display = 'inline'; }
 					
 		
 			function doesFileExist(urlToFile) {				
