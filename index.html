@@ -94,10 +94,9 @@
 			if(doesFileExist("./sun1_womenalive.pdf") || doesFileExist("./sun1_womenbrackets.pdf")){ sunOne = 1; sunOneWomen = 1; } 
 			if(doesFileExist("./sun1_openalive.pdf") || doesFileExist("./sun1_openbrackets.pdf")){ sunOne = 1; sunOneOpen = 1; } 
 			if(doesFileExist("./sun1_scratchalive.pdf") || doesFileExist("./sun1_scratchbrackets.pdf")){ sunOne = 1; sunOneScratch = 1; } 
-
-			alert(satNine);
-			if(boolean(satNine)){ document.getElementById("SAT9AM").style.display = 'inline'; }
-			if(boolean(satOne)){ document.getElementById("SAT1PM").style.display = 'inline'; }
+			
+			if(satNine == 1){ document.getElementById("SAT9AM").style.display = 'inline'; }
+			if(satOne == 1){ document.getElementById("SAT1PM").style.display = 'inline'; }
 					
 		
 			function doesFileExist(urlToFile) {				
