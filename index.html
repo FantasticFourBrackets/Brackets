@@ -62,6 +62,32 @@
 				<td><center><a href="./sat1_scratchbrackets.pdf">Scratch</a></center></td>
 			</tr> -->
 		</table>
+		<script>
+		if(doesFileExist("./sat9_openalive.pdf")){
+			document.getElementById("9AM").style.display = 'inline';
+		} 
+		else{
+			document.getElementById("9AM").style.display = 'none';
+		}
+		
+		function doesFileExist(urlToFile) {				
+			var xhr = new XMLHttpRequest();
+			xhr.open('HEAD', urlToFile, false);
+			
+			try{
+				xhr.send();
+			}catch(err){
+			alert(err);
+				return false;
+			}
+			 alert(xhr.status);
+			if (xhr.status == "404") {
+				return false;
+			} else {
+				return true;
+			}
+		}
+		</script>
 	</center>
   </body>
 </html>
