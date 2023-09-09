@@ -81,8 +81,7 @@
 			const sunOneOpen = 0;
 			const sunOneScratch = 0;
 
-			if(doesFileExist("./sat9_womenalive.pdf") || doesFileExist("./sat9_womenbrackets.pdf")){ satNine = 1; satNineWomen = 1; } 
-			alert("Test3");
+			if(doesFileExist("./sat9_womenalive.pdf") || doesFileExist("./sat9_womenbrackets.pdf")){ satNine = 1; satNineWomen = 1; } 			
 			if(doesFileExist("./sat9_openalive.pdf") || doesFileExist("./sat9_openbrackets.pdf")){ satNine = 1; satNineOpen = 1;} 
 			if(doesFileExist("./sat9_scratchalive.pdf") || doesFileExist("./sat9_scratchbrackets.pdf")){ satNine = 1; satNineScratch = 1; } 
 			if(doesFileExist("./sat1_womenalive.pdf") || doesFileExist("./sat1_womenbrackets.pdf")){ satOne = 1; satOneWomen = 1; } 
@@ -96,6 +95,7 @@
 			if(doesFileExist("./sun1_openalive.pdf") || doesFileExist("./sun1_openbrackets.pdf")){ sunOne = 1; sunOneOpen = 1; } 
 			if(doesFileExist("./sun1_scratchalive.pdf") || doesFileExist("./sun1_scratchbrackets.pdf")){ sunOne = 1; sunOneScratch = 1; } 
 
+			alert("Test4");
 			if(boolean(satNine)){ document.getElementById("SAT9AM").style.display = 'inline'; }
 			if(boolean(satOne)){ document.getElementById("SAT1PM").style.display = 'inline'; }
 					
