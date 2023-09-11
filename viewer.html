@@ -17,9 +17,10 @@
 				<p>Unable to display PDF file. <a id="eLink" href="">Download</a> instead.</p> 
 			</center>
 		</div>
-		<script>			
+		<script>
+			var currentUrl = window.location.href;
 			var queryString = window.location.search;
-			alert(queryString);
+			alert(currentUrl);
 			var urlParams = new URLSearchParams(queryString);
 			var pdfName = urlParams.get('pdf');
 			if(pdfName == null) {
