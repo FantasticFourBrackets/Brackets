@@ -19,13 +19,14 @@
 		</div>
 		<script>
 			var currentUrl = window.location.href;
-			var queryString = window.location.search;
-			alert(currentUrl);
+			var queryString = window.location.search;			
 			var urlParams = new URLSearchParams(queryString);
 			var pdfName = urlParams.get('pdf');
 			if(pdfName == null) {
 				window.location.href = "./index.html";
 			}else{
+				currentUrl = currentUrl.replace("viewer.html?pdf=" + pdfName, pdfName + ".pdf");
+				alert(currentUrl);
 				document.getElementById("pdfViewer").data = "./" + pdfName + ".pdf"
 				document.getElementById("eLink").href = "./" + pdfName + ".pdf"
 			}
