@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Cache-control" content="no-cache">
+	<style>
+		a:link {color: lightblue;background-color: transparent;text-decoration: none;}
+		a:visited {color: lightblue;background-color: transparent;text-decoration: none;}
+		a:hover {color: red;background-color: transparent;text-decoration: underline;}
+		a:active {color: yellow; background-color: transparent; text-decoration: underline;}
+	</style>
+	<title>Fantastic Four Brackets</title>
+	</head>
+	<body style="background-color:black">
+		<div >
+        	<center>
+				<object id="pdfViewer" data="" type="application/pdf" style="height: 95vh;width:95vw">
+				<p>Unable to display PDF file. <a id="eLink" href="">Download</a> instead.</p> 
+            </center>
+		</div>
+		<script>			
+			var queryString = window.location.search;
+			var urlParams = new URLSearchParams(queryString);
+			var pdfName = urlParams.get('pdf');
+			if(pdfName == null) {
+				window.location.href = "./index.html";
+			}else{
+				document.getElementById("pdfViewer").data = "./" + pdfName + ".pdf"
+				document.getElementById("eLink").href = "./" + pdfName + ".pdf"
+			}
+		</script>
+	</body>		
+</html>
