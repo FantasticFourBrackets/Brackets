@@ -13,7 +13,7 @@
 	<body style="background-color:black;color:white">
 		<div>
 			<center>
-				<iframe id="pdfViewer" src="https://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="height: 95vh;width:95vw" frameborder="0"></iframe>				
+				<iframe id="pdfViewer" src="" style="height: 95vh;width:95vw" frameborder="0"></iframe>				
 				<p>Unable to display PDF file. <a id="eLink" href="">Download</a> instead.</p> 
 			</center>
 		</div>
@@ -26,9 +26,9 @@
 				window.location.href = "./index.html";
 			}else{
 				currentUrl = currentUrl.replace("viewer.html?pdf=" + pdfName, pdfName + ".pdf");
-				currentUrl = "https://drive.google.com/viewerng/viewer?embedded=true&url=" + currentUrl;
+				currentUrl = "https://docs.google.com/gview?embedded=true&url=" + currentUrl;
 				alert(currentUrl);
-				document.getElementById("pdfViewer").data = currentUrl;
+				document.getElementById("pdfViewer").src = currentUrl;
 				document.getElementById("eLink").href = "./" + pdfName + ".pdf"
 			}
 		</script>
