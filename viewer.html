@@ -26,8 +26,9 @@
 				window.location.href = "./index.html";
 			}else{
 				currentUrl = currentUrl.replace("viewer.html?pdf=" + pdfName, pdfName + ".pdf");
+				currentUrl = "https://drive.google.com/viewerng/viewer?embedded=true&url=" + currentUrl;
 				alert(currentUrl);
-				document.getElementById("pdfViewer").data = "./" + pdfName + ".pdf"
+				document.getElementById("pdfViewer").data = currentUrl;
 				document.getElementById("eLink").href = "./" + pdfName + ".pdf"
 			}
 		</script>
