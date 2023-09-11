@@ -19,6 +19,7 @@
 		</div>
 		<script>			
 			var queryString = window.location.search;
+			alert(queryString);
 			var urlParams = new URLSearchParams(queryString);
 			var pdfName = urlParams.get('pdf');
 			if(pdfName == null) {
