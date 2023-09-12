@@ -28,7 +28,10 @@
 				currentUrl = currentUrl.replace("viewer.html?pdf=" + pdfName, pdfName + ".pdf");
 				currentUrl = "https://docs.google.com/gview?embedded=true&url=" + currentUrl;				
 				document.getElementById("pdfViewer").src = currentUrl;
-				document.getElementById("eLink").href = "./" + pdfName + ".pdf"
+
+				var currentDateTime = new Date();
+				var resultInSeconds = currentDateTime.getTime() / 1000;
+				document.getElementById("eLink").href = "./" + pdfName + ".pdf?" + resultInSeconds;
 			}
 		</script>
 	</body>		
