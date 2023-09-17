@@ -191,8 +191,11 @@
 			//Saturday 1PM
 			if(satOne == 1){ document.getElementById("SAT1PM").style.display = ''; }
 			if(satOneWomen > 0){ document.getElementById("sat1women").style.display = ''; }	
+			if(satOneWomen == 1 || satOneWomen == 3){ document.getElementById("sat1womenalive").style.display = ''; }
 			if(satOneOpen > 0){ document.getElementById("sat1open").style.display = ''; }	
+			if(satOneOpen == 1 || satOneOpen == 3){ document.getElementById("sat1openalive").style.display = ''; }
 			if(satOneScratch > 0){ document.getElementById("sat1scratch").style.display = ''; }
+			if(satOneScratch == 1 || satOneScratch == 3){ document.getElementById("sat1scratchalive").style.display = ''; }
 			//Sunday 9AM
 			if(sunNine == 1){ document.getElementById("SUN9AM").style.display = ''; }
 			if(sunNineWomenS == 1){ document.getElementById("sun9womenS").style.display = ''; }	
