@@ -166,19 +166,31 @@
 			if(doesFileExist("./sat1_scratchalive.pdf")){ satOne = 1; satOneScratch += 1; } 
 			if(doesFileExist("./sat1_scratchbrackets.pdf")){ satOne = 1; satOneScratch += 2; }
 			
-			if(doesFileExist("./sun9_womenaliveS.pdf") || doesFileExist("./sun9_womenbracketsS.pdf")){ sunNine = 1; sunNineWomenS = 1; } 
-			if(doesFileExist("./sun9_womenaliveD.pdf") || doesFileExist("./sun9_womenbracketsD.pdf")){ sunNine = 1; sunNineWomenD = 1; }
-			if(doesFileExist("./sun9_openaliveS.pdf") || doesFileExist("./sun9_openbracketsS.pdf")){ sunNine = 1; sunNineOpenS = 1; } 
-			if(doesFileExist("./sun9_openaliveD.pdf") || doesFileExist("./sun9_openbracketsD.pdf")){ sunNine = 1; sunNineOpenD = 1; } 
-			if(doesFileExist("./sun9_scratchaliveS.pdf") || doesFileExist("./sun9_scratchbracketsS.pdf")){ sunNine = 1; sunNineScratchS = 1; } 
-			if(doesFileExist("./sun9_scratchaliveD.pdf") || doesFileExist("./sun9_scratchbracketsD.pdf")){ sunNine = 1; sunNineScratchD = 1; } 
+			if(doesFileExist("./sun9_womenaliveS.pdf")){ sunNine = 1; sunNineWomenS += 1; } 
+			if(doesFileExist("./sun9_womenbracketsS.pdf")){ sunNine = 1; sunNineWomenS += 2; } 			
+			if(doesFileExist("./sun9_womenaliveD.pdf")){ sunNine = 1; sunNineWomenD += 1; }
+			if(doesFileExist("./sun9_womenbracketsD.pdf")){ sunNine = 1; sunNineWomenD += 2; }			
+			if(doesFileExist("./sun9_openaliveS.pdf")){ sunNine = 1; sunNineOpenS += 1; } 
+			if(doesFileExist("./sun9_openbracketsS.pdf")){ sunNine = 1; sunNineOpenS += 2; }
+			if(doesFileExist("./sun9_openaliveD.pdf")){ sunNine = 1; sunNineOpenD += 1; } 
+			if(doesFileExist("./sun9_openbracketsD.pdf")){ sunNine = 1; sunNineOpenD += 2; } 
+			if(doesFileExist("./sun9_scratchaliveS.pdf")){ sunNine = 1; sunNineScratchS += 1; } 
+			if(doesFileExist("./sun9_scratchbracketsS.pdf")){ sunNine = 1; sunNineScratchS += 2; } 
+			if(doesFileExist("./sun9_scratchaliveD.pdf")){ sunNine = 1; sunNineScratchD += 1; } 
+			if(doesFileExist("./sun9_scratchbracketsD.pdf")){ sunNine = 1; sunNineScratchD += 2; } 
 			
-			if(doesFileExist("./sun1_womenaliveS.pdf") || doesFileExist("./sun1_womenbracketsS.pdf")){ sunOne = 1; sunOneWomenS = 1; }
-			if(doesFileExist("./sun1_womenaliveD.pdf") || doesFileExist("./sun1_womenbracketsD.pdf")){ sunOne = 1; sunOneWomenD = 1; } 
-			if(doesFileExist("./sun1_openaliveS.pdf") || doesFileExist("./sun1_openbracketsS.pdf")){ sunOne = 1; sunOneOpenS = 1; } 
-			if(doesFileExist("./sun1_openaliveD.pdf") || doesFileExist("./sun1_openbracketsD.pdf")){ sunOne = 1; sunOneOpenD = 1; } 
-			if(doesFileExist("./sun1_scratchaliveS.pdf") || doesFileExist("./sun1_scratchbracketsS.pdf")){ sunOne = 1; sunOneScratchS = 1; } 
-			if(doesFileExist("./sun1_scratchaliveD.pdf") || doesFileExist("./sun1_scratchbracketsD.pdf")){ sunOne = 1; sunOneScratchD = 1; } 
+			if(doesFileExist("./sun1_womenaliveS.pdf")){ sunOne = 1; sunOneWomenS += 1; }
+			if(doesFileExist("./sun1_womenbracketsS.pdf")){ sunOne = 1; sunOneWomenS += 2; }
+			if(doesFileExist("./sun1_womenaliveD.pdf")){ sunOne = 1; sunOneWomenD += 1; } 
+			if(doesFileExist("./sun1_womenbracketsD.pdf")){ sunOne = 1; sunOneWomenD += 2; }
+			if(doesFileExist("./sun1_openaliveS.pdf")){ sunOne = 1; sunOneOpenS += 1; } 
+			if(doesFileExist("./sun1_openbracketsS.pdf")){ sunOne = 1; sunOneOpenS += 2; }
+			if(doesFileExist("./sun1_openaliveD.pdf")){ sunOne = 1; sunOneOpenD += 1; } 
+			if(doesFileExist("./sun1_openbracketsD.pdf")){ sunOne = 1; sunOneOpenD += 2; }
+			if(doesFileExist("./sun1_scratchaliveS.pdf")){ sunOne = 1; sunOneScratchS += 1; } 
+			if(doesFileExist("./sun1_scratchbracketsS.pdf")){ sunOne = 1; sunOneScratchS += 2; } 
+			if(doesFileExist("./sun1_scratchaliveD.pdf")){ sunOne = 1; sunOneScratchD += 1; } 
+			if(doesFileExist("./sun1_scratchbracketsD.pdf")){ sunOne = 1; sunOneScratchD += 2; }
 
 			//Saturday 9AM
 			if(satNine == 1){ document.getElementById("SAT9AM").style.display = ''; }
@@ -198,20 +210,20 @@
 			if(satOneScratch == 1 || satOneScratch == 3){ document.getElementById("sat1scratchalive").style.display = ''; }
 			//Sunday 9AM
 			if(sunNine == 1){ document.getElementById("SUN9AM").style.display = ''; }
-			if(sunNineWomenS == 1){ document.getElementById("sun9womenS").style.display = ''; }	
-			if(sunNineWomenD == 1){ document.getElementById("sun9womenD").style.display = ''; }	
-			if(sunNineOpenS == 1){ document.getElementById("sun9openS").style.display = ''; }	
-			if(sunNineOpenD == 1){ document.getElementById("sun9openD").style.display = ''; }	
-			if(sunNineScratchS == 1){ document.getElementById("sun9scratchS").style.display = ''; }
-			if(sunNineScratchD == 1){ document.getElementById("sun9scratchD").style.display = ''; }
+			if(sunNineWomenS > 0){ document.getElementById("sun9womenS").style.display = ''; }	
+			if(sunNineWomenD > 0){ document.getElementById("sun9womenD").style.display = ''; }	
+			if(sunNineOpenS > 0){ document.getElementById("sun9openS").style.display = ''; }	
+			if(sunNineOpenD > 0){ document.getElementById("sun9openD").style.display = ''; }	
+			if(sunNineScratchS > 0){ document.getElementById("sun9scratchS").style.display = ''; }
+			if(sunNineScratchD > 0){ document.getElementById("sun9scratchD").style.display = ''; }
 			//Sunday 1PM
 			if(sunOne == 1){ document.getElementById("SUN1PM").style.display = ''; }
-			if(sunOneWomenS == 1){ document.getElementById("sun1womenS").style.display = ''; }
-			if(sunOneWomenD == 1){ document.getElementById("sun1womenD").style.display = ''; }
-			if(sunOneOpenS == 1){ document.getElementById("sun1openS").style.display = ''; }	
-			if(sunOneOpenD == 1){ document.getElementById("sun1openD").style.display = ''; }	
-			if(sunOneScratchS == 1){ document.getElementById("sun1scratchS").style.display = ''; }	
-			if(sunOneScratchD == 1){ document.getElementById("sun1scratchD").style.display = ''; }	
+			if(sunOneWomenS > 0){ document.getElementById("sun1womenS").style.display = ''; }
+			if(sunOneWomenD > 0){ document.getElementById("sun1womenD").style.display = ''; }
+			if(sunOneOpenS > 0){ document.getElementById("sun1openS").style.display = ''; }	
+			if(sunOneOpenD > 0){ document.getElementById("sun1openD").style.display = ''; }	
+			if(sunOneScratchS > 0){ document.getElementById("sun1scratchS").style.display = ''; }	
+			if(sunOneScratchD > 0){ document.getElementById("sun1scratchD").style.display = ''; }	
 		
 			function doesFileExist(urlToFile) {				
 				var xhr = new XMLHttpRequest();
