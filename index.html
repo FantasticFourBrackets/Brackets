@@ -17,6 +17,12 @@
 				<td><font size="7">Fantastic Four</font></td>			
 			</tr>
 			<tr>				
+				<td><font size="7">Tournament Results</font></td>			
+			</tr>
+			<tr id="tournamentresults">
+				<td><center><a href="./viewer.html?pdf=tournamentresults">Women's</a></center></td>
+			</tr>
+			<tr>				
 				<td><font size="7">Bracket Results</font></td>			
 			</tr>
 		</table>
@@ -129,6 +135,7 @@
 			</tr>
 		</table>
 		<script>
+			var tournamentresults = 0;
 			var satNine = 0;
 			var satNineWomen = 0;
 			var satNineOpen = 0;
@@ -153,6 +160,8 @@
 			var sunOneScratchS = 0;
 			var sunOneScratchD = 0;
 
+			if(doesFileExist("./tournamentresults.pdf")){ tournamentresults = 1; } 	
+			
 			if(doesFileExist("./sat9_womenalive.pdf")){ satNine = 1; satNineWomen += 1; } 	
 			if(doesFileExist("./sat9_womenbrackets.pdf")){ satNine = 1; satNineWomen += 2; } 			
 			if(doesFileExist("./sat9_openalive.pdf")){ satNine = 1; satNineOpen += 1;} 
@@ -192,6 +201,9 @@
 			if(doesFileExist("./sun1_scratchaliveD.pdf")){ sunOne = 1; sunOneScratchD += 1; } 
 			if(doesFileExist("./sun1_scratchbracketsD.pdf")){ sunOne = 1; sunOneScratchD += 2; }
 
+			//Tournament Results
+			if(tournamentresults == 1){ document.getElementById("tournamentresults").style.display = ''; }
+			
 			//Saturday 9AM
 			if(satNine == 1){ document.getElementById("SAT9AM").style.display = ''; }
 			if(satNineWomen > 0){ document.getElementById("sat9women").style.display = ''; }
